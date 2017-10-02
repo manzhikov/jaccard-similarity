@@ -29,7 +29,7 @@ public class JaccardSimilarity {
     s.scan(pattern, data, 10, 10, 3, 3, 0.50);
   }
   
-  private void scan(double[][] item, double[][] data, int dataRows, int dataColumns, int itemRows, int itemColumns, double threshold) {
+  public void scan(double[][] item, double[][] data, int dataRows, int dataColumns, int itemRows, int itemColumns, double threshold) {
     double[][] buffer = new double[itemRows][itemColumns];
     
     for(int i = 0 - itemRows; i < dataRows; i++) {
